@@ -36,7 +36,7 @@ DARK_BLUE = (0, 0, 128)
 TITLE_TEXT = "Cat Defense System"
 SCANNING_TEXT = "Waiting for Cats..."
 ALERT_TEXT = "CATS ARE HERE!!!"
-ALERT_SOUND = 'sounds/alert.wav'
+ALERT_SOUND = 'sounds/Alert_2_and_improved.wav'
 CODES = ("01907121", "02026993", "01661313", "02225937", "01435009")
 
 
