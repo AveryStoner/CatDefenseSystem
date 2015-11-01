@@ -15,7 +15,7 @@ FPS = 15
 WIDTH = 320
 HEIGHT = 240
 WINDOW_SIZE = (WIDTH,HEIGHT)
-YOFFSET = 15
+YOFFSET = 27
 
 # colors are specified using RGB
 # see: https://drafts.csswg.org/css-color/
@@ -26,9 +26,10 @@ BLACK = (0, 0, 0)
 GRAY = (80, 80, 80)
 LIGHT_GRAY = (192, 192, 192)
 DARK_GRAY = (32, 32, 32)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+RED = (255, 127, 80)
+GREEN = (173, 255, 47)
+BLUE = (130, 200, 225)
+DARK_BLUE = (0, 0, 128)
 
 
 # Customize
@@ -83,14 +84,14 @@ class Status:
         self.change_to_Alarming()
 
     def change_to_Scanning (self):
-        self.textcolor = GREEN
-        self.backgroundcolor = DARK_GRAY
+        self.textcolor = RED
+        self.backgroundcolor = DARK_BLUE
         self.statustext = SCANNING_TEXT
         self.status = "scanning"
 
     def change_to_Alarming (self):
-        self.textcolor = WHITE
-        self.backgroundcolor = RED
+        self.textcolor = GREEN
+        self.backgroundcolor = BLUE
         self.statustext = ALERT_TEXT
         self.status = "alarming"
 
@@ -129,9 +130,9 @@ if __name__=="__main__":
     pygame.display.set_caption('CAT DEFENSE SYSTEM')
     fpsClock = pygame.time.Clock()
     DisplaySurface = pygame.display.set_mode(WINDOW_SIZE)
-    DisplaySurface.fill(WHITE)
+    DisplaySurface.fill(GREEN)
     font = pygame.font.Font(None, 36)
-    title = font.render(TITLE_TEXT, 1, BLACK)
+    title = font.render(TITLE_TEXT, 1, RED)
     titlepos = title.get_rect()
     titlepos.centerx = DisplaySurface.get_rect().centerx
     DisplaySurface.blit(title, titlepos)
