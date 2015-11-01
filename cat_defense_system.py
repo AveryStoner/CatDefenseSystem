@@ -36,7 +36,7 @@ TITLE_TEXT = "Cat Defense System"
 SCANNING_TEXT = "Waiting for Cats..."
 ALERT_TEXT = "CATS ARE HERE!!!"
 ALERT_SOUND = 'sounds/alert.wav'
-CODES = ("12345", "abcdef", "01661313")
+CODES = ("01907121", "02026993", "01661313", "02225937", "01435009")
 
 
 def quit_program():
@@ -44,7 +44,7 @@ def quit_program():
     raise SystemExit
 
 def poll(code,status):
-    print "** poll() **"
+    print "%% mwahahaha %%"
     # put the process to sleep to share CPU and reduce resource consumption while idling
     pygame.time.wait(15)  # time in ms
     for event in pygame.event.get():
