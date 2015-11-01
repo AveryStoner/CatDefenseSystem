@@ -32,9 +32,9 @@ BLUE = (0, 0, 255)
 
 
 # Customize
-TITLE_TEXT = "CDS"
-SCANNING_TEXT = "Waiting for..."
-ALERT_TEXT = "MONKEY!!!"
+TITLE_TEXT = "Cat Defense System"
+SCANNING_TEXT = "Waiting for Cats..."
+ALERT_TEXT = "CATS ARE HERE!!!"
 ALERT_SOUND = 'sounds/alert.wav'
 CODES = ("12345", "abcdef", "01661313")
 
@@ -126,6 +126,7 @@ def paint (surface, statusobject):
 
 if __name__=="__main__":
     pygame.init()
+    pygame.display.set_caption('CAT DEFENSE SYSTEM')
     fpsClock = pygame.time.Clock()
     DisplaySurface = pygame.display.set_mode(WINDOW_SIZE)
     DisplaySurface.fill(WHITE)
