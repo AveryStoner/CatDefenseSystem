@@ -27,10 +27,10 @@ BLACK = (0, 0, 0)
 GRAY = (80, 80, 80)
 LIGHT_GRAY = (192, 192, 192)
 DARK_GRAY = (32, 32, 32)
-RED = (255, 127, 80)
+RED = (255, 0, 100)
 GREEN = (173, 255, 47)
-BLUE = (130, 200, 225)
-DARK_BLUE = (0, 0, 128)
+BLUE = (140, 140, 225)
+DARK_RED = (140, 0, 0)
 
 
 # Customize
@@ -85,8 +85,8 @@ class Status:
         self.change_to_Alarming()
 
     def change_to_Scanning (self):
-        self.textcolor = RED
-        self.backgroundcolor = DARK_BLUE
+        self.textcolor = BLUE
+        self.backgroundcolor = DARK_RED
         self.statustext = SCANNING_TEXT
         self.status = "scanning"
 
