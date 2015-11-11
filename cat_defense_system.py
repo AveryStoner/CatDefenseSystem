@@ -1,9 +1,10 @@
-##
+## 
 ## Code patterns and snippets from:
 ##   -   Making Games with Python and Pygame by Al Sweigart, 2012
 ##         http://inventwithpython.com/pygame
 ##   -   Making games with Pygame by (Tom Chance?), 2003
 ##         https://www.pygame.org/docs/tut/tom/games6.html
+## Source Code also from https://github.com/danstoner/python_experiments
 
 import pygame
 # SDL_FBDEV environment variable is required for the Raspberry Pi PiTFT by AdaFruit
@@ -35,7 +36,7 @@ DARK_BLUE = (0, 0, 128)
 # Customize
 TITLE_TEXT = "Cat Defense System"
 SCANNING_TEXT = "Waiting for Cats..."
-ALERT_TEXT = "CATS ARE HERE!!!"
+ALERT_TEXT = "The cats are here!!!"
 ALERT_SOUND = 'sounds/Alert_2_and_improved.wav'
 CODES = ("01907121", "02026993", "01661313", "02225937", "01435009")
 
